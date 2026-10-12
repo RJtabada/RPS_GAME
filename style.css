@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; background: #1b2340; color: #fff;
+  font-family: system-ui, Arial, sans-serif; display: flex; justify-content: center;
+}
+.wrap { width: 100%; max-width: 460px; padding: 16px; text-align: center; }
+h1 { margin: 8px 0 14px; }
+
+.scores { display: flex; gap: 10px; margin-bottom: 18px; }
+.box { flex: 1; background: #2b3563; border-radius: 10px; padding: 8px; }
+.box span { display: block; font-size: 12px; opacity: .7; text-transform: uppercase; }
+.box strong { font-size: 26px; }
+
+.arena { display: flex; align-items: center; justify-content: space-around; margin: 10px 0; }
+.big { font-size: 72px; }
+.vs { font-weight: bold; opacity: .6; }
+.side p { margin: 4px 0 0; opacity: .7; }
+
+.result { font-size: 22px; min-height: 30px; margin: 14px 0; font-weight: bold; }
+.result.win { color: #5be37d; }
+.result.lose { color: #ff6b6b; }
+.result.draw { color: #ffd166; }
+
+.choices { display: flex; gap: 10px; margin-bottom: 18px; }
+.choice {
+  flex: 1; background: #2b3563; border: 2px solid transparent; color: #fff;
+  border-radius: 12px; padding: 14px 4px; font-size: 40px; cursor: pointer;
+}
+.choice span { display: block; font-size: 14px; margin-top: 4px; }
+.choice:hover { border-color: #4da3ff; }
+
+.btn {
+  background: #4da3ff; color: #fff; border: 0; border-radius: 8px;
+  padding: 10px 20px; font-size: 16px; cursor: pointer;
+}
+.btn:hover { background: #3b8fe8; }
